@@ -1,0 +1,200 @@
+@use '../../assets/styles/tokens/colors' as *;
+@use '../../assets/styles/tokens/typography' as *;
+@use '../../assets/styles/tokens/spacing' as *;
+@use '../../assets/styles/tokens/z-index' as *;
+
+.wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: $z-sticky;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: $spacing-0 $spacing-8;
+  height: 4rem;
+  transition: background-color 0.2s ease, border-color 0.2s ease;
+}
+
+// ─── Dark (랜딩) ───
+.dark {
+  background-color: rgba(17, 17, 17, 0);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+
+  .navLink {
+    color: rgba(255, 255, 255, 0.6);
+
+    &:hover {
+      color: $color-white;
+      background-color: rgba(255, 255, 255, 0.1);
+    }
+  }
+
+  .megaDropdown {
+    background-color: rgba(17, 17, 17, 0.85);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+  }
+
+  .megaHeader {
+    color: $color-white;
+  }
+
+  .chevron {
+    color: rgba(255, 255, 255, 0.4);
+  }
+
+  .megaItem {
+    color: rgba(255, 255, 255, 0.5);
+
+    &:hover {
+      color: $color-white;
+    }
+  }
+}
+
+// ─── Light (나머지 페이지) ───
+.light {
+  background-color: $color-bg;
+  border-bottom: 1px solid $color-border;
+
+  .navLink {
+    color: $color-gray-600;
+
+    &:hover {
+      color: $color-text;
+      background-color: $color-gray-100;
+    }
+  }
+}
+
+// ─── Left: Logo ───
+.logo {
+  flex-shrink: 0;
+}
+
+.logoImage {
+  display: block;
+  height: 3rem;
+  width: auto;
+}
+
+// ─── Center: Category Nav ───
+.nav {
+  position: relative;
+}
+
+.megaDropdownOpen {
+  opacity: 1 !important;
+  visibility: visible !important;
+  pointer-events: auto !important;
+}
+
+.navLinks {
+  display: flex;
+  align-items: center;
+  gap: $spacing-4;
+}
+
+.navLink {
+  display: block;
+  padding: $spacing-2 $spacing-4;
+  font-size: 1rem;
+  font-weight: $font-weight-medium;
+  border-radius: $radius-md;
+  transition: color 0.15s ease, background-color 0.15s ease;
+}
+
+// ─── Mega Dropdown ───
+.megaDropdown {
+  position: fixed;
+  top: 4rem;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 3.5rem;
+  padding: $spacing-6 $spacing-8;
+  // padding-left: 20.5%;
+  background-color: $color-bg;
+  border-radius: 0 0 $radius-md $radius-md;
+  // box-shadow: $shadow-md;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition: opacity 0.2s ease, visibility 0.2s ease;
+
+  // navbar와 드롭다운 사이 빈 공간을 메워서 hover 유지
+  &::before {
+    content: '';
+    position: absolute;
+    top: -1rem;
+    left: 0;
+    width: 100%;
+    height: 1rem;
+  }
+}
+
+.megaColumn {
+  display: flex;
+  flex-direction: column;
+}
+
+.megaHeader {
+  display: flex;
+  align-items: center;
+  gap: $spacing-1;
+  font-size: $font-size-sm;
+  font-weight: $font-weight-semibold;
+  color: $color-text;
+  margin-bottom: $spacing-2;
+  white-space: nowrap;
+}
+
+.chevron {
+  font-size: $font-size-base;
+  color: $color-gray-400;
+}
+
+.megaList {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+}
+
+.megaItem {
+  display: block;
+  padding: $spacing-1 0;
+  font-size: 0.9rem;
+  color: $color-text-secondary;
+  white-space: nowrap;
+  transition: color 0.15s ease;
+
+  &:hover {
+    color: $color-text;
+  }
+}
+
+// ─── Right: Contact ───
+.contact {
+  flex-shrink: 0;
+  display: inline-flex;
+  align-items: center;
+  padding: $spacing-2 $spacing-4;
+  font-size: $font-size-sm;
+  font-weight: $font-weight-semibold;
+  color: $color-white;
+  background-color: $color-primary;
+  border-radius: $radius-md;
+  transition: background-color 0.15s ease;
+
+  &:hover {
+    background-color: $color-primary-hover;
+  }
+}

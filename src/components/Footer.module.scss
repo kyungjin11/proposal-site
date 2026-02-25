@@ -1,0 +1,71 @@
+@use '../../assets/styles/tokens/spacing' as *;
+@use '../../assets/styles/tokens/typography' as *;
+@use '../../assets/styles/tokens/colors' as *;
+
+.footer {
+  background-color: $color-black;
+  color: $color-gray-400;
+  margin-top: 0;
+}
+
+.inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: $spacing-8 $spacing-8 $spacing-6;
+}
+
+// ─── Top ───
+.top {
+  display: flex;
+  flex-direction: column;
+  gap: $spacing-4;
+  margin-bottom: $spacing-6;
+}
+
+.logo {
+  display: block;
+  height: 3rem;
+  width: fit-content;
+  object-fit: contain;
+}
+
+.description {
+  font-size: $font-size-sm;
+  line-height: $line-height-relaxed;
+  color: $color-gray-400;
+}
+
+// ─── Divider ───
+.divider {
+  border: none;
+  border-top: 1px solid $color-gray-700;
+  margin: 0 0 $spacing-6;
+}
+
+// ─── Info ───
+.info {
+  display: flex;
+  gap: 4rem;
+  margin-bottom: $spacing-6;
+}
+
+.infoColumn {
+  display: flex;
+  flex-direction: column;
+  gap: $spacing-2;
+  font-size: $font-size-xs;
+  line-height: $line-height-relaxed;
+  color: $color-gray-400;
+
+  strong {
+    color: $color-gray-200;
+    font-weight: $font-weight-semibold;
+  }
+}
+
+// ─── Copyright ───
+.copyright {
+  font-size: $font-size-xs;
+  color: $color-gray-600;
+  letter-spacing: 0.02em;
+}

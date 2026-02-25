@@ -1,4 +1,5 @@
-import Link from 'next/link';
+import Navbar from '@/components/Navbar';
+import Footer from '@/components/Footer';
 import styles from './layout.module.scss';
 
 export default function SiteLayout({
@@ -8,12 +9,9 @@ export default function SiteLayout({
 }) {
   return (
     <>
-      <header className={styles.header}>
-        <Link href="/" className={styles.headerTitle}>
-          Proposal Viewer
-        </Link>
-      </header>
+      <Navbar />
       <main className={styles.main}>{children}</main>
+      <Footer />
     </>
   );
 }

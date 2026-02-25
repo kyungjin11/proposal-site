@@ -15,11 +15,13 @@
 
 html {
   font-size: 100%;
+  overflow-x: hidden;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 body {
+  overflow-x: hidden;
   font-family: $font-family-base;
   font-size: $font-size-base;
   font-weight: $font-weight-regular;

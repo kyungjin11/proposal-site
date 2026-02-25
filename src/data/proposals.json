@@ -1,30 +1,35 @@
 [
   {
-    "slug": "brand-renewal-2025",
-    "title": "2025 브랜드 리뉴얼 제안서",
-    "summary": "브랜드 아이덴티티 재정립 및 디자인 시스템 구축 프로젝트",
+    "slug": "SEO-keyword",
+    "title": "구글 SEO 키워드 분석 리포트",
+    "summary": "키워드 난이도 · 검색량 · 트래픽 잠재력 · 상위노출 전략",
+    "category": "seo",
+    "subCategory": "키워드 분석",
     "thumb": {
-      "src": "/proposals/brand-renewal-2025/thumb.jpg",
-      "alt": "2025 브랜드 리뉴얼 제안서 썸네일"
+      "src": "/proposals/SEO-keyword/1.jpg",
+      "alt": "SEO 키워드 분석 제안서 썸네일"
     },
     "pages": [
-      { "src": "/proposals/brand-renewal-2025/p-001.jpg", "alt": "브랜드 리뉴얼 제안서 1페이지 - 표지" },
-      { "src": "/proposals/brand-renewal-2025/p-002.jpg", "alt": "브랜드 리뉴얼 제안서 2페이지 - 목차" },
-      { "src": "/proposals/brand-renewal-2025/p-003.jpg", "alt": "브랜드 리뉴얼 제안서 3페이지 - 현황 분석" }
-    ]
-  },
-  {
-    "slug": "app-redesign",
-    "title": "모바일 앱 리디자인 제안서",
-    "summary": "사용자 경험 개선을 위한 모바일 앱 UI/UX 리디자인",
-    "thumb": {
-      "src": "/proposals/app-redesign/thumb.jpg",
-      "alt": "모바일 앱 리디자인 제안서 썸네일"
-    },
-    "pages": [
-      { "src": "/proposals/app-redesign/p-001.jpg", "alt": "앱 리디자인 제안서 1페이지 - 표지" },
-      { "src": "/proposals/app-redesign/p-002.jpg", "alt": "앱 리디자인 제안서 2페이지 - 현황 분석" },
-      { "src": "/proposals/app-redesign/p-003.jpg", "alt": "앱 리디자인 제안서 3페이지 - 개선 방향" }
+      { "src": "/proposals/SEO-keyword/1.jpg", "alt": "SEO 키워드 분석 제안서 1페이지" },
+      { "src": "/proposals/SEO-keyword/2.jpg", "alt": "SEO 키워드 분석 제안서 2페이지" },
+      { "src": "/proposals/SEO-keyword/3.jpg", "alt": "SEO 키워드 분석 제안서 3페이지" },
+      { "src": "/proposals/SEO-keyword/4.jpg", "alt": "SEO 키워드 분석 제안서 4페이지" },
+      { "src": "/proposals/SEO-keyword/5.jpg", "alt": "SEO 키워드 분석 제안서 5페이지" },
+      { "src": "/proposals/SEO-keyword/6.jpg", "alt": "SEO 키워드 분석 제안서 6페이지" },
+      { "src": "/proposals/SEO-keyword/7.jpg", "alt": "SEO 키워드 분석 제안서 7페이지" },
+      { "src": "/proposals/SEO-keyword/8.jpg", "alt": "SEO 키워드 분석 제안서 8페이지" },
+      { "src": "/proposals/SEO-keyword/9.jpg", "alt": "SEO 키워드 분석 제안서 9페이지" },
+      { "src": "/proposals/SEO-keyword/10.jpg", "alt": "SEO 키워드 분석 제안서 10페이지" },
+      { "src": "/proposals/SEO-keyword/11.jpg", "alt": "SEO 키워드 분석 제안서 11페이지" },
+      { "src": "/proposals/SEO-keyword/12.jpg", "alt": "SEO 키워드 분석 제안서 12페이지" },
+      { "src": "/proposals/SEO-keyword/13.jpg", "alt": "SEO 키워드 분석 제안서 13페이지" },
+      { "src": "/proposals/SEO-keyword/14.jpg", "alt": "SEO 키워드 분석 제안서 14페이지" },
+      { "src": "/proposals/SEO-keyword/15.jpg", "alt": "SEO 키워드 분석 제안서 15페이지" },
+      { "src": "/proposals/SEO-keyword/16.jpg", "alt": "SEO 키워드 분석 제안서 16페이지" },
+      { "src": "/proposals/SEO-keyword/17.jpg", "alt": "SEO 키워드 분석 제안서 17페이지" },
+      { "src": "/proposals/SEO-keyword/18.jpg", "alt": "SEO 키워드 분석 제안서 18페이지" },
+      { "src": "/proposals/SEO-keyword/19.jpg", "alt": "SEO 키워드 분석 제안서 19페이지" },
+      { "src": "/proposals/SEO-keyword/20.jpg", "alt": "SEO 키워드 분석 제안서 20페이지" }
     ]
   }
 ]

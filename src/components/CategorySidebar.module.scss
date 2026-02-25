@@ -1,0 +1,137 @@
+@use '../../assets/styles/tokens/colors' as *;
+@use '../../assets/styles/tokens/typography' as *;
+@use '../../assets/styles/tokens/spacing' as *;
+
+.sidebar {
+  width: 200px;
+  flex-shrink: 0;
+  padding-top: $spacing-10;
+}
+
+.allButton {
+  display: block;
+  width: 100%;
+  padding: $spacing-3 $spacing-4;
+  font-size: 1.1rem;
+  font-weight: $font-weight-semibold;
+  color: $color-text-secondary;
+  text-align: left;
+  background: none;
+  border: none;
+  border-radius: $radius-md;
+  cursor: pointer;
+  transition: color 0.15s ease, background-color 0.15s ease;
+
+  &:hover {
+    color: $color-text;
+    background-color: $color-gray-100;
+  }
+
+  &.active {
+    color: $color-primary;
+    background-color: rgba($color-primary, 0.08);
+    // border-left: 3px solid $color-primary;
+    border-radius: $radius-md ;
+  }
+}
+
+.list {
+  list-style: none;
+  padding: $spacing-0;
+  margin: $spacing-2 0 0;
+}
+
+.item {
+  & + & {
+    margin-top: $spacing-1;
+  }
+}
+
+.categoryRow {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: $spacing-3 $spacing-4;
+  background: none;
+  border: none;
+  border-radius: $radius-md;
+  cursor: pointer;
+  transition: color 0.15s ease, background-color 0.15s ease;
+
+  &:hover {
+    background-color: $color-gray-100;
+
+    .category {
+      color: $color-text;
+    }
+  }
+
+  &.active {
+    background-color: rgba($color-primary, 0.08);
+
+    .category {
+      color: $color-primary;
+    }
+  }
+}
+
+.category {
+  flex: 1;
+  font-size: 1rem;
+  font-weight: $font-weight-semibold;
+  color: $color-text-secondary;
+  text-align: left;
+  transition: color 0.15s ease;
+}
+
+.chevronBtn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.5rem;
+  font-size: $font-size-sm;
+  color: $color-text-secondary;
+  transition: transform 0.2s ease;
+}
+
+.chevronOpen {
+  transform: rotate(180deg);
+}
+
+.subList {
+  list-style: none;
+  padding: $spacing-0;
+  margin: $spacing-0;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.25s ease;
+}
+
+.subListOpen {
+  max-height: 300px;
+}
+
+.subItem {
+  display: block;
+  width: 100%;
+  padding: $spacing-2 $spacing-4 $spacing-2 $spacing-8;
+  font-size: 0.9rem;
+  font-weight: $font-weight-medium;
+  color: $color-text-secondary;
+  text-align: left;
+  background: none;
+  border: none;
+  border-radius: $radius-md;
+  cursor: pointer;
+  transition: color 0.15s ease, background-color 0.15s ease;
+
+  &:hover {
+    color: $color-text;
+    background-color: $color-gray-100;
+  }
+
+  &.active {
+    color: $color-primary;
+    background-color: rgba($color-primary, 0.08);
+  }
+}
